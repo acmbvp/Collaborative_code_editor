@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
-import {BrowserRouter as Router , Route} from 'react-router-dom';
-import Editor from './Editor';
-import Login from './Login';
+import {Link} from 'react-router-dom';
+
 class Home extends Component
 {
 	render()
@@ -9,13 +8,11 @@ class Home extends Component
 		return(
 
 			<div>
-				<Router>
-			     <div>
-			    
-			     <Route exact path ='/login' component={Login}/>
-			     <Route exact path='/aceEditor' component={Editor} />
-			     </div>
-			     </Router>
+				 <h1>Home</h1>
+			      <br />
+			      <Link to="/login">Login Here </Link>
+			      <br />
+			      <Link to="/aceEditor">Welcome to Ace Editor </Link>
 		
 			  </div>
 
