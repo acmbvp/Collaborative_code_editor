@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import AceEditor from 'react-ace';
-import brace from 'brace';
 import 'brace/mode/java';
 import 'brace/theme/github';
 import Fire from './Fire';
