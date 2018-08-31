@@ -19,10 +19,9 @@ class Editor extends Component
 
 componentDidMount()
 {
-	database.ref('/code').on('value',function(snapshot){
+	database.ref('/code').on('value',(snapshot)=>{
     	
     	let val = snapshot.val();
-    	console.log(val);
     	this.setState({
     		code:val
     	})
@@ -40,7 +39,7 @@ componentDidMount()
 	{
 		return(
 			<div>
-			<h1> Collaborative Editor </h1>
+			<h1 className="red darken-1"> Collaborative Editor </h1>
 			<h3> A workplace for you </h3>
 			<AceEditor
 			mode='java'
